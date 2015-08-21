@@ -1,0 +1,1 @@
+random integer function: http://stackoverflow.com/questions/4959975/generate-random-value-between-two-numbers-in-javascript
