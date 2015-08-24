@@ -16,7 +16,7 @@ function getRandomSpeed() {
   return randomInteger(100, 200);
 }
 
-function selectRandomE(array) {
+function selectRandom(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
 
@@ -42,11 +42,7 @@ var Enemy = function(x, y, sprite) {
   sprite = sprite || 'images/enemy-bug.png';
   Actor.call(this, x, y, sprite);
   this.speed = getRandomSpeed(); // units = [px/dt]
-
-
 };
-
-
 Enemy.prototype = Object.create(Actor.prototype);
 Enemy.prototype.hitBox = {'x': 101, 'y': 83};
 Enemy.prototype.startY = [68, 151, 234];
